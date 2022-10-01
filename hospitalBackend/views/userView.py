@@ -6,7 +6,7 @@ from hospitalBackend.models.usuario import Usuario
 
 class UsuarioListView(generics.ListCreateAPIView):
     queryset = Usuario.objects.all()
-    serializer_class = usuarioSerializer
+    serializer_class = UsuarioSerializer
     #permission_classes = {IsAuthenticated,}
 
     def list(self, request):
